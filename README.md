@@ -11,7 +11,7 @@ This repository contains a minimal configuration of hyprland for Archlinux
 ## Features
 
 - **Wallpaper change**: Includes a shell script to change to a random wallpaper from the ```Wallpaper``` folder
-- **Matching colors**: The colors of the terminal and the application launcher will match the current wallpaper 
+- **Matching colors**: The colors of the terminal, application launcher and logout menu will match the current wallpaper 
 
 
 ## How to use
