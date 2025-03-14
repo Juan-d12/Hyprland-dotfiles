@@ -1,0 +1,58 @@
+@import ".cache/wal/colors-waybar.css";
+
+window {
+margin: 0px;
+border: 1px solid @color4; // #bd93f9;
+background-color: @color0; // #282a36;
+}
+
+#input {
+margin: 5px;
+border: none;
+color: @color7; // #f8f8f2;
+background-color: @color1; // #44475a;
+}
+
+#inner-box {
+margin: 5px;
+border: none;
+background-color: @color0; // #282a36;
+}
+
+#outer-box {
+margin: 5px;
+border: none;
+background-color: @color0; // #282a36;
+}
+
+#scroll {
+margin: 0px;
+border: none;
+}
+
+#text {
+margin: 5px;
+border: none;
+color: @color7; // #f8f8f2;
+} 
+
+#img {
+width: 1rem;
+margin-right: 0.5rem;
+}
+
+#entry.activatable #text {
+color: @color0; // #282a36;
+}
+
+#entry > * {
+color: @color7; // #f8f8f2;
+}
+
+#entry:selected {
+background-color: @color1; // #44475a;
+}
+
+#entry:selected #text {
+font-weight: bold;
+}

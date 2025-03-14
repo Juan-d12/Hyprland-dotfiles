@@ -1,0 +1,121 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    border: none;
+    border-radius: 0;
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 1;
+    color: #ffffff;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    /* box-shadow: inset 0 -3px transparent; */
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+    padding: 0 5px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+}
+
+/* you can set a style on hover for any module like this */
+#clock:hover {
+    background-color: #64727d;
+}
+
+#cpu:hover {
+    background-color: #64727d;
+}
+
+#network:hover {
+    background-color: #64727d;
+}
+
+#pulseaudio:hover {
+    background-color: #64727d;
+}
+
+#wireplumber:hover {
+    background-color: #64727d;
+}
+
+#custom-power:hover {
+    background-color: #64727d;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    box-shadow: inset 0 -3px white;
+}
+
+#workspaces button.active {
+    background-color: #64727d;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background-color: #64727d;
+}
+
+#custom-filemanager,
+#custom-browser,
+#custom-wolf,
+#custom-terminal {
+    padding: 0 5px;
+}
+
+#tray,
+#clock,
+#cpu,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-power {
+    padding: 0 10px;
+    color: white;
+    background-color: transparent;
+}
+
+#workspaces {
+    margin: 0 4px;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#pulseaudio.muted {
+    background-color: #f53c3c;
+}
+
+#wireplumber.muted {
+    background-color: #f53c3c;
+}

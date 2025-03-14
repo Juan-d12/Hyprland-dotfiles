@@ -1,0 +1,119 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top", // Waybar at top layer
+  "position": "bottom", // Waybar position (top|bottom|left|right)
+  "height": 30, // Waybar height (to be removed for auto height)
+  // "width": 1900, // Waybar width
+  "spacing": 5, // Gaps between modules (4px)
+  "reload_style_on_change": true,
+  "name": "bar",
+  // Choose the order of the modules
+  "modules-left": [
+    "hyprland/submap",
+    "hyprland/workspaces",
+    "custom/filemanager",
+    "custom/browser",
+    "custom/wolf",
+    "custom/terminal",
+    "tray",
+  ],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["pulseaudio", "network", "cpu", "clock", "custom/power"],
+  // Modules configuration
+  // Left modules
+  "hyprland/submap": {
+    "format": "{}",
+    "always-on": true,
+    "min-length": 8,
+    "max-length": 8,
+    "default-submap": "Arch",
+    "on-click": "wofi --show drun",
+    "tooltip": false,
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "persistent-workspaces": {
+      "*": 4, // 5 workspaces by default on every monitor
+      // "HDMI-A-1": 3, // but only three on HDMI-A-1
+    },
+  },
+  "custom/filemanager": {
+    "format": "",
+    "on-click": "dolphin",
+    "tooltip-format": "Abrir Explorador de archivos",
+  },
+  "custom/browser": {
+    "format": "",
+    "on-click": "firefox",
+    "tooltip-format": "Abrir Firefox",
+  },
+  "custom/wolf": {
+    "format": "",
+    "on-click": "librewolf",
+    "tooltip-format": "Abrir LibreWolf",
+  },
+  "custom/terminal": {
+    "format": "",
+    "on-click": "kitty",
+    "tooltip-format": "Abrir Terminal",
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10,
+  },
+
+  // Right modules
+  "clock": {
+    // "timezone": "America/New_York",
+    "format": "{:%Y/%m/%d    %H:%M }",
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b>{}</b></span>",
+      },
+    },
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "CPU: {usage}% ",
+    "on-click": "kitty -e btop",
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ipaddr}/{cidr} ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+  },
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    // this will ignore easyeffetcs sink when displaying audio
+    "ignored-sinks": ["Easy Effects Sink"],
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
+    },
+    "on-click": "pavucontrol",
+  },
+  "custom/power": {
+    "format": "",
+    "on-click": "wlogout -b 2",
+    "tooltip-format": "Power Menu",
+  },
+}
