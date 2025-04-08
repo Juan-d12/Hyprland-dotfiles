@@ -3,7 +3,7 @@
   "layer": "top", // Waybar at top layer
   "position": "bottom", // Waybar position (top|bottom|left|right)
   "height": 30, // Waybar height (to be removed for auto height)
-  // "width": 1900, // Waybar width
+  // "width": 1900, // Waybar width (optional)
   "spacing": 5, // Gaps between modules (4px)
   "reload_style_on_change": true,
   "name": "bar",
@@ -26,7 +26,7 @@
     "always-on": true,
     "min-length": 8,
     "max-length": 8,
-    "default-submap": "Arch",
+    "default-submap": "Menu",
     "on-click": "wofi --show drun",
     "tooltip": false,
   },
@@ -71,7 +71,9 @@
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
       "format": {
-        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "months": "<span color='#ffcc66'><b>{}</b></span>",
+        "days": "<span color='#ffffff'><b>{}</b></span>",
+        "weekdays": "<span color='#7CD37C'><b>{}</b></span>",
         "today": "<span color='#ff6699'><b>{}</b></span>",
       },
     },
@@ -84,7 +86,7 @@
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} ",
+    "format-ethernet": "{ifname} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
