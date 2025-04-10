@@ -54,6 +54,26 @@ button:hover {
 }
 
 #custom-power:hover {
+    background-color: #f53c3c;
+}
+
+#custom-filemanager:hover {
+    background-color: #64727d;
+}
+
+#custom-browser:hover {
+    background-color: #64727d;
+}
+
+#custom-wolf:hover {
+    background-color: #64727d;
+}
+
+#custom-terminal:hover {
+    background-color: #64727d;
+}
+
+#submap:hover {
     background-color: #64727d;
 }
 
