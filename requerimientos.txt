@@ -1,7 +1,6 @@
 qt5ct
 qt6ct
 ttf-hack
-kvantum
 breeze-icons
 nwg-look
 waybar
@@ -22,3 +21,6 @@ playerctl
 grim
 slurp
 easyeffects
+kitty
+dolphin
+firefox
