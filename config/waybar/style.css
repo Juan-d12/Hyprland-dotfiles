@@ -23,8 +23,6 @@ button {
     /* Use box-shadow instead of border so the text isn't offset */
     /* box-shadow: inset 0 -3px transparent; */
     /* Avoid rounded borders under each button name */
-    margin-top: 2px;
-    margin-bottom: 2px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -102,11 +100,11 @@ button:hover {
 }
 
 #custom-filemanager {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 #custom-terminal {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 #custom-filemanager,
@@ -123,7 +121,13 @@ button:hover {
     border-width: 2px;
 }
 
-#tray,
+#tray {
+    padding: 0 10px;
+    background-color: transparent;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 #clock,
 #cpu,
 #network,
@@ -138,20 +142,22 @@ button:hover {
     border-radius: 5px;
     margin-top: 2px;
     margin-bottom: 2px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     border-style: solid;
     border-color: #dddddd;
     border-width: 2px;
 }
 
 #workspaces {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     border-style: solid;
     border-color: #dddddd;
     border-width: 2px;
     border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 @keyframes blink {
