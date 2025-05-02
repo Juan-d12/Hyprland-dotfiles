@@ -1,6 +1,8 @@
 qt5ct
 qt6ct
 ttf-hack
+noto-fonts
+noto-fonts-cjk
 breeze-icons
 nwg-look
 waybar
