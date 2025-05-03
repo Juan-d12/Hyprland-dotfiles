@@ -10,15 +10,21 @@
   // Choose the order of the modules
   "modules-left": [
     "hyprland/submap",
-    "hyprland/workspaces",
     "custom/filemanager",
     "custom/browser",
     "custom/wolf",
     "custom/terminal",
-    "tray",
+    "hyprland/window",
   ],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["pulseaudio", "network", "cpu", "clock", "custom/power"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "network",
+    "cpu",
+    "clock",
+    "custom/power",
+  ],
   // Modules configuration
   // Left modules
   "hyprland/submap": {

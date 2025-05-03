@@ -1,3 +1,5 @@
+@import "/home/me/.cache/wal/colors-waybar.css";
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     border: none;
@@ -112,13 +114,11 @@ button:hover {
 #custom-wolf,
 #custom-terminal {
     padding: 0 5px;
-    background-color: black;
-    border-radius: 5px;
+    background-color: transparent;
     margin-top: 2px;
     margin-bottom: 2px;
-    border-style: solid;
-    border-color: #dddddd;
-    border-width: 2px;
+    border-radius: 5px;
+    font-size: 18;
 }
 
 #tray {
@@ -134,11 +134,24 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-power,
-#submap,
-#window {
+#submap {
     padding: 0 10px;
     color: white;
     background-color: black;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 2px;
+}
+
+#window {
+    padding: 0 10px;
+    color: @color0;
+    background-color: @color6;
     border-radius: 5px;
     margin-top: 2px;
     margin-bottom: 2px;
