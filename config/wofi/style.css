@@ -1,8 +1,8 @@
 @import ".cache/wal/colors-waybar.css";
 
 window {
-margin: 0px;
-border: 1px solid @color4; // #bd93f9;
+margin: 5px 5px 5px 5px;
+border: 2px solid @color4; // #bd93f9;
 background-color: @color0; // #282a36;
 }
 
