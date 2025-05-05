@@ -4,7 +4,7 @@
   "position": "bottom", // Waybar position (top|bottom|left|right)
   "height": 30, // Waybar height (to be removed for auto height)
   // "width": 1900, // Waybar width (optional)
-  "spacing": 5, // Gaps between modules (4px)
+  "spacing": 4, // Gaps between modules (4px)
   "reload_style_on_change": true,
   "name": "bar",
   // Choose the order of the modules
@@ -30,9 +30,9 @@
   "hyprland/submap": {
     "format": "{}",
     "always-on": true,
-    "min-length": 8,
+    "min-length": 5,
     "max-length": 8,
-    "default-submap": "Menu",
+    "default-submap": "Apps",
     "on-click": "wofi --show drun",
     "tooltip": false,
   },
@@ -41,7 +41,7 @@
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
     "persistent-workspaces": {
-      "*": 4, // 5 workspaces by default on every monitor
+      "*": 5, // 5 workspaces by default on every monitor
       // "HDMI-A-1": 3, // but only three on HDMI-A-1
     },
   },
