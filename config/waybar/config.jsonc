@@ -57,7 +57,7 @@
   },
   "custom/wolf": {
     "format": "",
-    "on-click": "librewolf",
+    "on-click": "flatpak run io.gitlab.librewolf-community",
     "tooltip-format": "Abrir LibreWolf",
   },
   "custom/terminal": {
