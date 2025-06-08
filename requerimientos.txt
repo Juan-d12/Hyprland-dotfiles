@@ -26,3 +26,4 @@ easyeffects
 kitty
 dolphin
 firefox
+swayosd-git
