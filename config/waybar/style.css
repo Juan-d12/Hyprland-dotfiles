@@ -1,4 +1,4 @@
-@import "/home/diego/.cache/wal/colors-waybar.css";
+@import "/home/me/.cache/wal/colors-waybar.css";
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
@@ -78,7 +78,10 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 5px;
+    padding-top: 3;
+    padding-bottom: 3;
+    padding-left: 7;
+    padding-right: 7;
     background-color: black;
     color: white;
 }
