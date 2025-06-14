@@ -3,7 +3,10 @@ qt6ct
 ttf-hack
 noto-fonts
 noto-fonts-cjk
+breeze
 breeze-icons
+breeze-gtk
+breeze5
 nwg-look
 waybar
 wlogout
