@@ -78,10 +78,7 @@ button:hover {
 }
 
 #workspaces button {
-    padding-top: 3;
-    padding-bottom: 3;
-    padding-left: 7;
-    padding-right: 7;
+    padding: 4;
     background-color: black;
     color: white;
 }
