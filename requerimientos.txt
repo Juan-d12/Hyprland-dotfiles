@@ -29,4 +29,5 @@ easyeffects
 kitty
 dolphin
 firefox
+librewolf-bin
 swayosd-git
