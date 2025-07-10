@@ -34,23 +34,28 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #clock:hover {
-    background-color: #64727d;
+    color: black;
+    background-color: @color7;
 }
 
 #cpu:hover {
-    background-color: #64727d;
+    color: black;
+    background-color: @color7;
 }
 
 #network:hover {
-    background-color: #64727d;
+    color: black;
+    background-color: @color7;
 }
 
 #pulseaudio:hover {
-    background-color: #64727d;
+    color: black;
+    background-color: @color7;
 }
 
 #wireplumber:hover {
-    background-color: #64727d;
+    color: black;
+    background-color: @color7;
 }
 
 #custom-power:hover {
@@ -58,23 +63,28 @@ button:hover {
 }
 
 #custom-filemanager:hover {
-    background-color: #64727d;
+    color: black;
+    background-color: @color7;
 }
 
 #custom-browser:hover {
-    background-color: #64727d;
+    color: black;
+    background-color: @color7;
 }
 
 #custom-wolf:hover {
-    background-color: #64727d;
+    color: black;
+    background-color: @color7;
 }
 
 #custom-terminal:hover {
-    background-color: #64727d;
+    color: black;
+    background-color: @color7;
 }
 
 #submap:hover {
-    background-color: #64727d;
+    color: black;
+    background-color: @color7;
 }
 
 #workspaces button {
@@ -152,9 +162,14 @@ button:hover {
     border-width: 2px;
 }
 
+#network {
+    color: black;
+    background-color: mediumseagreen;
+}
+
 #window {
     padding: 0 10px;
-    color: @color0;
+    color: black;
     background-color: @color6;
     border-radius: 5px;
     margin-top: 2px;
