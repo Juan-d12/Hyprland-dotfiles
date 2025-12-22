@@ -167,6 +167,13 @@ button:hover {
     background-color: mediumseagreen;
 }
 
+#submap {
+    background-image: url("archLogo.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #window {
     padding: 0 10px;
     color: black;

@@ -32,7 +32,7 @@
     "always-on": true,
     "min-length": 5,
     "max-length": 8,
-    "default-submap": "Apps",
+    "default-submap": " ",
     "on-click": "wofi --show drun",
     "tooltip": false,
   },
